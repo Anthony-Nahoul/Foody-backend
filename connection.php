@@ -7,5 +7,4 @@ $db_pass = null;
 $db_name = "foodydb";
 
 $mysqli = new mysqli($host, $db_user, $db_pass, $db_name);
-
 ?>
