@@ -6,7 +6,7 @@ $description = $_POST["description"];
 $approved = 0;
 
 $query = $mysqli->prepare("INSERT INTO reviews(users_id, restaurants_id , review_description, approved) VALUES (?, ?, ?, ?)");
-$query->bind_param("ssss", $userid, $restaurantid, $description, $approved);
+$query->bind_param("iisi", $userid, $restaurantid, $description, $approved);
 $query->execute();
 
 $response = [];
