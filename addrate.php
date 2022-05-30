@@ -1,4 +1,5 @@
 <?php
+header('Access-Control-Allow-Origin:*');
 include("connection.php");
 $userid = $_POST["userid"];
 $restaurantid = $_POST["restaurantid"];

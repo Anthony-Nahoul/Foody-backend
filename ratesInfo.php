@@ -1,4 +1,6 @@
 <?php
+header('Access-Control-Allow-Origin:*');
+
 include("connection.php");
 $restaurantid = $_POST["restaurantid"];
 $query = $mysqli->prepare("SELECT count(id), avg(value) from rates where restaurants_id  = ?");

@@ -1,4 +1,6 @@
 <?php
+header('Access-Control-Allow-Origin:*');
+
 include("connection.php");
 $approved = $_POST["approved"];
 $id = $_POST["id"];

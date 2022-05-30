@@ -1,4 +1,6 @@
 <?php
+header('Access-Control-Allow-Origin:*');
+
 include("connection.php");
 $query = $mysqli->prepare("SELECT * from users");
 $query->execute();

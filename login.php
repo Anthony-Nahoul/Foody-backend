@@ -1,4 +1,6 @@
 <?php
+header('Access-Control-Allow-Origin:*');
+
 include("connection.php");
 $email = $_POST["email"];
 $password = hash("sha256", $_POST["password"]);

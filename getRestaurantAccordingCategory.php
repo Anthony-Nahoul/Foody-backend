@@ -1,4 +1,6 @@
 <?php
+header('Access-Control-Allow-Origin:*');
+
 include("connection.php");
 $id = $_POST["id"];
 $query = $mysqli->prepare("SELECT piclink, name from restaurants where categories_id  = ?");
