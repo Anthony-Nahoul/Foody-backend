@@ -3,10 +3,10 @@ header('Access-Control-Allow-Origin:*');
 
 include("connection.php");
 
-$id = $_GET["id"];
+$categoryname = $_GET["categoryname"];
 
-$query = $mysqli->prepare("SELECT categoryname from categories where id = ?");
-$query->bind_param("i", $id);
+$query = $mysqli->prepare("SELECT id from categories where categoryname = ?");
+$query->bind_param("s", $categoryname);
 $query->execute();
 $arraypics = $query->get_result();
 $response = [];
