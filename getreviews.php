@@ -1,7 +1,5 @@
 <?php
-header('Access-Control-Allow-Origin:*');
 
-include("connection.php");
 $query = $mysqli->prepare("SELECT * from reviews");
 $query->execute();
 $arrayreviews = $query->get_result();

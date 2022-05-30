@@ -1,5 +1,4 @@
 <?php
-header('Access-Control-Allow-Origin:*');
 
 $result = include("login.php");
 include("connection.php");
