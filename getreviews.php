@@ -1,5 +1,5 @@
 <?php
-
+include("connection.php");
 $query = $mysqli->prepare("SELECT * from reviews");
 $query->execute();
 $arrayreviews = $query->get_result();
