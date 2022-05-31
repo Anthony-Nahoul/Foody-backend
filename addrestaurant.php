@@ -10,5 +10,5 @@ $query = $mysqli->prepare("INSERT INTO restaurants(name, description , piclink, 
 $query->bind_param("ssssi", $name[$i], $description[$i], $restopic[$i], $address[$i], $category[$i]);
 $query->execute();
 }
-
+header('Location: ' . $_SERVER['HTTP_REFERER']);
 ?>
